@@ -22,7 +22,7 @@ module Minitest
 
     def soft_assert_all
       self.soft_assertion_messages=[] if self.soft_assertion_messages.nil?
-      unless slef.soft_assertion_messages.empty?
+      unless self.soft_assertion_messages.empty?
           raise Minitest::Assertion, self.soft_assertion_messages.join(";\n")
       end
       true
